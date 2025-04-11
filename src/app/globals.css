@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #4ECDC4;
+  --background-color: #1A1A1A;
+  --text-color: #FFFFFF;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity;
+  }
+
+  .input-primary {
+    @apply bg-white/10 text-white px-4 py-2 rounded-lg border border-white/20 focus:outline-none focus:border-primary;
+  }
+} 
